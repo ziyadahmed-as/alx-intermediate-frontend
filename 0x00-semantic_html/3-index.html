@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="description" content="Accessible form with ARIA roles and attributes">
+  <meta name="keywords" content="HTML, Semantic, ARIA, Accessibility, Form">
+  <meta name="author" content="Ziyad Ahmed Abdulla">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>Accessible Form with ARIA</title>
+</head>
+<body>
+  <!-- Header with site navigation -->
+  <header>
+    <h1 id="form-title">My Accessible Form Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <header>
+        <h2>Understanding Semantic HTML with ARIA</h2>
+        <p>Published on <time datetime="2024-09-10">September 10</time></p>
+      </header>
+
+      <section>
+        <h3>Introduction</h3>
+        <p>
+          Semantic HTML combined with ARIA attributes enhances accessibility,
+          making web applications more inclusive.
+        </p>
+      </section>
+
+      <!-- Accessible Form Section -->
+      <section>
+        <h3>Contact Form</h3>
+        <form action="#" method="POST" aria-labelledby="form-title" role="form">
+          <!-- Name Field -->
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" aria-required="true">
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" aria-required="true">
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <button type="submit" aria-label="Submit the form">Submit</button>
+          </div>
+
+          <!-- Live Region for Alerts -->
+          <div aria-live="polite" role="alert"></div>
+        </form>
+      </section>
+
+      <footer>
+        <p>Written by Ziyad Ahmed Abdulla</p>
+        <p>Published on 2024-09-11</p>
+      </footer>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 All Rights Reserved</p>
+  </footer>
+</body>
+</html>
