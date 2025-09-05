@@ -1,17 +1,29 @@
 # Node modules
 node_modules/
 
-# Tailwind CSS build output
-src/output.css
+# Build output
+dist/
+build/
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# OS-specific files
+# OS files
 .DS_Store
 Thumbs.db
 
-# Environment files
-.inter
+# Environment variables
+inter/
+.inter.local
+.inter.*.local
+
+# IDE/Editor folders
+.vscode/
+.idea/
+*.swp
+
+# TailwindCSS generated files
+*.css.map
