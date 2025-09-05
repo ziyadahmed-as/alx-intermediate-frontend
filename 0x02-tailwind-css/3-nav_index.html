@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 bg-gray-50 min-h-screen">
+    <header class="mb-8 text-center">
+        <h1 class="text-3xl font-bold text-gray-800">Flexbox Navigation Bar</h1>
+    </header>
+
+    <nav class="flex space-x-5 justify-center bg-gray-300 text-white p-4 rounded-lg shadow-sm">
+        <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">Home</a>
+        <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">About</a>
+        <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">Services</a>
+        <a href="#" class="px-2 text-xl hover:bg-gray-500 p-2 rounded-lg transition-colors duration-200">Contact</a>
+    </nav>
+</body>
+</html>
