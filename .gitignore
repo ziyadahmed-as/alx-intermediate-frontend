@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node modules
 node_modules/
 
@@ -26,3 +27,8 @@ inter/
 
 # TailwindCSS generated files
 *.css.map
+=======
+inter/
+node_modules/
+dist/
+>>>>>>> 7dda9bff531b64cca2ec9830ff74d192aae0bcd9
