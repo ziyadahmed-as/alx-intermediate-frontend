@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid, Flexbox & Image Gallery Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr !important;
+            }
+            
+            section {
+                flex-direction: column;
+            }
+            
+            section div {
+                width: 100% !important;
+                margin-bottom: 1rem;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        .gallery img {
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="p-4 bg-gray-50 min-h-screen">
+    <header class="bg-blue-500 text-white p-4 rounded-lg shadow-md mb-6">
+        <h1 class="text-3xl text-center">Grid, Flexbox & Image Gallery Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+        <section class="lg:col-span-2 flex gap-4">
+            <div class="w-1/2 bg-red-200 p-4 rounded-lg shadow-sm">Flexbox Item 1</div>
+            <div class="w-1/2 bg-red-400 p-4 rounded-lg shadow-sm">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4 rounded-lg shadow-sm">Sidebar</aside>
+    </main>
+
+    <!-- Image Gallery Section -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Image Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gallery">
+            <div class="overflow-hidden rounded-lg shadow-md">
+                <img src="https://picsum.photos/400/300?random=1" alt="Gallery image 1" class="w-full h-48 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-sm text-gray-700">Nature Scene 1</p>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+                <img src="https://picsum.photos/400/300?random=2" alt="Gallery image 2" class="w-full h-48 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-sm text-gray-700">Nature Scene 2</p>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+                <img src="https://picsum.photos/400/300?random=3" alt="Gallery image 3" class="w-full h-48 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-sm text-gray-700">Nature Scene 3</p>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+                <img src="https://picsum.photos/400/300?random=4" alt="Gallery image 4" class="w-full h-48 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-sm text-gray-700">Nature Scene 4</p>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+                <img src="https://picsum.photos/400/300?random=5" alt="Gallery image 5" class="w-full h-48 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-sm text-gray-700">Nature Scene 5</p>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-lg shadow-md">
+                <img src="https://picsum.photos/400/300?random=6" alt="Gallery image 6" class="w-full h-48 object-cover">
+                <div class="p-3 bg-white">
+                    <p class="text-sm text-gray-700">Nature Scene 6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-8 rounded-lg shadow-md">
+        <p class="text-center">&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
