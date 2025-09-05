@@ -1,0 +1,10 @@
+﻿@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Your custom CSS below */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
