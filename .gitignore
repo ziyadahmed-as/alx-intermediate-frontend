@@ -14,11 +14,10 @@ pnpm-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Environment variables
+# Environment folder
 inter/
-.inter.local
-.inter.*.local
 
 # IDE/Editor folders
 .vscode/
