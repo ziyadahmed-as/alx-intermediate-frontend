@@ -1,0 +1,11 @@
+// 2-nested_tag.scss
+
+body {
+  margin: 0px;
+  padding: 0px;
+
+  // Nested declaration for p inside body
+  p {
+    margin: 10px;
+  }
+}
