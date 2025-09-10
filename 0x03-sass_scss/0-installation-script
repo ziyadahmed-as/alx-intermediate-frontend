@@ -1,0 +1,6 @@
+1. Installed Node.js version 20.16 on Windows.
+2. Verified installation using: node -v
+3. Installed SASS globally with: npm install -g sass@3.7.4
+4. Verified SASS installation with: sass --version
+5. Created directory 0x03-sass_scss inside alx-intermediate-frontend
+6. Created 0-installation-script file to document steps
